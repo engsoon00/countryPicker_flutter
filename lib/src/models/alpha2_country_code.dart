@@ -6,7 +6,7 @@ class Alpha2CountryCode {
   static Future<String> getCurrentCountryCode() async {
     final client = HttpClient();
     try {
-      final request = await client.getUrl(Uri.parse("http://ip-api.com/json/"));
+      final request = await client.getUrl(Uri.parse("https://reallyfreegeoip.org/json/"));
       final response = await request.close();
 
       if (response.statusCode == HttpStatus.ok) {

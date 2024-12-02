@@ -21,9 +21,10 @@ class DefaultCountryCodeListItemView extends StatelessWidget {
         color: Colors.black87,
         fontWeight: FontWeight.w500,
         overflow: TextOverflow.visible),
-    this.flagSize = 30,
+    this.flagSize = 25,
     this.dialCodeStyle = const TextStyle(
         fontSize: 16,
+        color: Colors.black87,
         fontWeight: FontWeight.w500,
         overflow: TextOverflow.visible),
     this.padding = const EdgeInsets.symmetric(vertical: 8, horizontal: 16),

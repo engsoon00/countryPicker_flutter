@@ -23,7 +23,7 @@ class _CountryPickerDemoState extends State<CountryPickerDemo> {
   @override
   void initState() {
     textEditingController = TextEditingController();
-    
+
     super.initState();
   }
 
