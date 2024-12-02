@@ -1,0 +1,36 @@
+name: canopas_country_picker
+description: A Simple, Customizable Flutter Country picker for picking a Country or Dialing code with Search functionality.
+version: 0.0.10
+repository: https://github.com/canopas/flutter-country-picker
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+topics:
+  - country-picker
+  - dialing-code
+  - country-code-picker
+  - country-code
+
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+
