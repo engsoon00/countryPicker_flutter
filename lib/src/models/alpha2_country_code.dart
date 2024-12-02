@@ -12,7 +12,7 @@ class Alpha2CountryCode {
       if (response.statusCode == HttpStatus.ok) {
         final responseBody = await response.transform(utf8.decoder).join();
         final jsonMap = json.decode(responseBody);
-        final countryCode = jsonMap['countryCode'];
+        final countryCode = jsonMap['country_name'];
         return countryCode;
       } else {
         throw Alpha2CountryCodeException(

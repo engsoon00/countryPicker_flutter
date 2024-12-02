@@ -20,11 +20,22 @@ class _CountryPickerDemoState extends State<CountryPickerDemo> {
   bool selected = false;
   late TextEditingController textEditingController;
 
+  String labelText= '';
+
   @override
-  void initState() {
+  void initState(){
     textEditingController = TextEditingController();
 
+    getCountry();
+
     super.initState();
+  }
+
+  getCountry() async{
+    labelText = await Alpha2CountryCode.getCurrentCountryCode();
+    setState(() {
+      labelText = labelText;
+    });
   }
 
   @override
@@ -52,7 +63,7 @@ class _CountryPickerDemoState extends State<CountryPickerDemo> {
                           counter: countryCode != null
                               ? Text(countryCode!.name)
                               : null,
-                          label: const Text("Select country"),
+                          label: Text(labelText),
                           labelStyle: kTextStyle,
                           suffixIcon: !selected
                               ? const Icon(Icons.arrow_drop_down_rounded)
